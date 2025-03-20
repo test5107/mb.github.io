@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mainak Basak - CV</title>
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: #0f9d58;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Header */
+    header {
+      background: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #0f9d58;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #0f9d58;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 4px;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+    nav ul li a {
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #0f9d58;
+    }
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    /* Section Styles */
+    section {
+      padding: 60px 0;
+      border-bottom: 1px solid #333;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    section h2 {
+      color: #0f9d58;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 4px solid #0f9d58;
+      padding-left: 10px;
+    }
+    .resume-item {
+      margin-bottom: 20px;
+    }
+    .resume-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+      color: #e0e0e0;
+    }
+    .resume-item p, .resume-item ul {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    .resume-item ul {
+      list-style: disc;
+    }
+    /* Fade-In Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      nav {
+        top: auto;
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#conferences">Conferences</a></li>
+      <li><a href="#thesis">Thesis</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Mainak Basak</h1>
+    <p>MSc. Software. AI Security Researcher</p>
+  </header>
+
+  <!-- Main Content Container -->
+  <div class="container">
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+      <h2>Contact Information</h2>
+      <p>
+        <strong>Phone:</strong> +82 10-5462-5888<br />
+        <strong>Email:</strong> <a href="mailto:mainak93@gachon.ac.kr">mainak93@gachon.ac.kr</a><br />
+        <strong>Website:</strong> <a href="https://mossfit.github.io" target="_blank">mossfit.github.io</a>
+      </p>
+    </section>
+
+    <!-- Research Summary -->
+    <section id="research" class="fade-in">
+      <h2>Research Summary</h2>
+      <p>
+        AI Security researcher with 5+ years of experience in network security, anomaly detection, secure data mining, explainable AI, generative adversarial models, and machine learning. Current interests include modeling malware detection systems, transformer models, exploring vulnerabilities, and detecting prompt injection attacks in large language models.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+      <div class="resume-item">
+        <h3>Doctorate of Philosophy (PhD)</h3>
+        <p><strong>Gachon University, South Korea</strong> (2022 – Expected July 2025)</p>
+        <p>Thesis: <em>Development of the Security Framework: Enhancing Malware Detection Capabilities in Operational Environments</em></p>
+        <p>GPA: 4.3/4.5</p>
+      </div>
+      <div class="resume-item">
+        <h3>Master of Engineering</h3>
+        <p><strong>Gachon University, South Korea</strong> (Sep 2019 – Feb 2022)</p>
+        <p>Thesis: <em>Explaining malware adversary by visualizing latent features through densely connected residual involution network</em></p>
+        <p>GPA: 4.2/4.5</p>
+      </div>
+      <div class="resume-item">
+        <h3>Bachelor of Engineering</h3>
+        <p><strong>MCKV Institute of Engineering, Kolkata, India</strong> (Sep 2013 – Sep 2017)</p>
+        <p>Project: <em>Optimization of Chassis of Commercial Utility Vehicle</em></p>
+        <p>GPA: 6.69</p>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="fade-in">
+      <h2>Professional Experience</h2>
+      <div class="resume-item">
+        <h3>Research Assistant and Lab Instructor</h3>
+        <p><strong>AI Security Lab, Gachon University, South Korea</strong> (Feb 2022 – Present)</p>
+        <ul>
+          <li>Lectured on AI Security and deep learning concepts.</li>
+          <li>Prepared course materials and supervised undergraduate students.</li>
+          <li>Provided hands-on training in Python and PyTorch.</li>
+          <li>Developed various transformer models and managed administrative tasks.</li>
+        </ul>
+      </div>
+      <div class="resume-item">
+        <h3>AI Security Researcher</h3>
+        <p><strong>AI Information Security Lab, Gachon University, South Korea</strong> (Sep 2019 – Feb 2022)</p>
+        <ul>
+          <li>Streamlined research processes and collaborated with leadership.</li>
+          <li>Conducted data analysis and authored research papers.</li>
+          <li>Performed independent research and stayed updated with current literature.</li>
+        </ul>
+      </div>
+      <div class="resume-item">
+        <h3>Graduate Apprentice Trainee, Warranty Technical Engineer</h3>
+        <p><strong>Piaggio Vehicles Pvt. Ltd.</strong> (Sep 2016 – May 2017, Italy / Pune, India)</p>
+        <ul>
+          <li>Worked with AutoCAD, CATIA, and quality management standards.</li>
+          <li>Assisted in asset management and performed administrative duties.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="fade-in">
+      <h2>Publications</h2>
+      <ol>
+        <li>Basak, M., Kim, D.-W., Han, M.-M., & Shin, G.-Y. “Attention-Based Malware Detection Model by Visualizing Latent Features Through Dynamic Residual Kernel Network”. <em>Sensors</em> 2024, 24, 7953.</li>
+        <li>Basak, M. & Han, M.-M. “CyberSentinel: A Transparent Defense Framework for Malware Detection in High-Stakes Operational Environments”. <em>Sensors</em> 2024, 24, 3406.</li>
+        <li>Basak, M., Kim, D.-W., Han, M.-M., & Shin, G.-Y. “Explainable Intrusion Detection Framework for Knowledge Extraction from Dense Module Knowledge Graph Generation”. <em>IEEE Transactions on Information Forensics and Security</em> (Under review).</li>
+        <li>Furkat, S., Basak, M., Nasimov, R., Abdusalomov, A., & Cho, Y.I. “Explainable Lightweight Block Attention Module Framework for Network-Based IoT Attack Detection”. <em>Future Internet</em> 15(9): 297, 2023.</li>
+        <li>Yun, J., Basak, M., & Han, M.-M. “Interpretable Anomaly Detection in System Logs Using Attention-guided Prototypes”. <em>Knowledge-Based Systems</em>, 2020.</li>
+        <li>Yun, J., Basak, M., & Han, M.-M. “Bayesian Rule Modeling for Interpretable Mortality Classification of COVID-19 Patients”. <em>Computers, Materials & Continua</em> 69(3): 2827-2843, 2021.</li>
+      </ol>
+    </section>
+
+    <!-- Conferences -->
+    <section id="conferences" class="fade-in">
+      <h2>Conferences</h2>
+      <ol>
+        <li>Basak, M. & Han, M.-M. “DCBAM - Explainable Lightweight Framework for Network-Based IoT Attack Detection”, KIIS Autumn Conference 2023.</li>
+        <li>Basak, M., Yun, J. & Han, M.-M. “Depth Point Attention Guided Network for Automatic Classification of COVID-19 From CT Images”, KSII Fall Conference 2020.</li>
+      </ol>
+    </section>
+
+    <!-- Thesis -->
+    <section id="thesis" class="fade-in">
+      <h2>Thesis</h2>
+      <p>
+        Explaining malware adversary by visualizing latent features through densely connected residual involution network.
+        <a href="#" target="_blank">[link]</a>
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <ul>
+        <li>National Research Foundation of Korea (NRF) grant (MSIT) – NRF-2022R1F1A107337513</li>
+        <li>Development of kernel and node detection algorithms for security breaches in Remote Desktop Protocol (IITP-2021-2020-0-01602)</li>
+        <li>
+          <strong>Detecting and Mitigating Prompt Injection Attacks in Large Language Models</strong>: Explored prompt-based vulnerabilities, designed automated detection mechanisms, and filtering techniques.
+        </li>
+        <li>Graduate School Research Funding (GCU-2019-2019-0777)</li>
+        <li>Certified Data Processing Specialist (AMCAT License: 2806504-211)</li>
+        <li>Experthub Skill Development Center, Pune – Training on latest automotive engineering tools.</li>
+        <li>Freelance Startup & NGO website management – Web development and content management.</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, C++, MATLAB, Java</li>
+        <li><strong>Tools/Libraries:</strong> NumPy, SciPy, OpenCV, Matplotlib, Seaborn, Pandas, Scikit-Learn</li>
+        <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Keras</li>
+      </ul>
+    </section>
+
+    <!-- References -->
+    <section id="references" class="fade-in">
+      <h2>References</h2>
+      <ul>
+        <li>
+          <strong>Mithun Biswas</strong><br />
+          MSc. in Computer Vision, FS Solutions, Pangyo Innovation Lab, South Korea<br />
+          Email: <a href="mailto:mithun@fssolution.co.kr">mithun@fssolution.co.kr</a>
+        </li>
+        <li>
+          <strong>S M Uddin Nadim</strong><br />
+          Senior AI Engineer, Department of AI Lab, Deep Insight, Seoul, South Korea<br />
+          Email: <a href="mailto:smnadimuddin@gmail.com">smnadimuddin@gmail.com</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Optional JavaScript for additional interactivity can be added here -->
+  <script>
+    // For this template, sections already have a CSS fadeIn effect.
+    // Further interactive features (e.g., typewriter effects, dynamic highlights) can be added as desired.
+  </script>
+</body>
+</html>
